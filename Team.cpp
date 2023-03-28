@@ -1,17 +1,32 @@
 #include "Team.h"
+#include <string>
 
-Team::Team()
+
+
+Team::Team(std::string name)
 {
-
+    teamName = name;
 }
 
 
 
 Team::~Team()
 {
-
+    
 }
 
+
+std::string Team::getName()
+{
+    return teamName;
+}
+
+
+
+void Team::setName(std::string newName)
+{
+    teamName = newName;
+}
 
 
 double Team::getPPG()
@@ -33,6 +48,26 @@ double Team::getdefPPG()
 void Team::setdefPPG(double newDefPPG)
 {
     defPPG = newDefPPG;
+}
+
+int Team::getGames()
+{
+    return games;
+}
+
+void Team::setGames(int newGames)
+{
+    games = newGames;
+}
+
+float Team::getwinPerc()
+{
+    return winPercentage;
+}
+
+void Team::setwinPerc(float newWinPerc)
+{
+    winPercentage = newWinPerc;
 }
 
 

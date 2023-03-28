@@ -1,7 +1,7 @@
 #ifndef EXECUTIVE_H
 #define EXECUTIVE_H
-#include <Team.h>
-#include <vector.h>
+#include "Team.h"
+#include <vector>
 #include <string>
 
 class Executive
